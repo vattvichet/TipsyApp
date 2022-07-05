@@ -16,9 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var twentyPctButton: UIButton!
     @IBOutlet weak var splitNumberLabel: UILabel!
     
-    
+    var people = 5
     
     @IBAction func tipChanged(_ sender: UIButton) {
+        splitNumberLabel.text = String(format: "%f", people)
     }
     
     @IBAction func stepValueChanged(_ sender: UIStepper) {
